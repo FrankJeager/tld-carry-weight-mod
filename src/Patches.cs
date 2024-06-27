@@ -1,7 +1,8 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using Il2Cpp;
 using UnityEngine;
 using MelonLoader;
+
 
 namespace CarryWeightMod
 {
@@ -23,7 +24,7 @@ namespace CarryWeightMod
 
             if (__instance.PlayerIsSprinting() || __instance.PlayerIsWalking() || __instance.PlayerIsClimbing())
             {
-                rate += (GameManager.GetEncumberComponent().GetHourlyCalorieBurnFromWeight() * (30f / GameManager.GetEncumberComponent().m_MaxCarryCapacityKG));
+                rate += (GameManager.GetEncumberComponent().GetHourlyCalorieBurnFromWeight() * (30f / GameManager.GetEncumberComponent().GetMaxCarryCapacityKG().ToQuantity(1)));
             }
             if (GameManager.GetFreezingComponent().IsFreezing())
             {
