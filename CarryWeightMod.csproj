@@ -103,6 +103,7 @@
         <Reference Include="Il2CppTLD.Encryption"/>
         <Reference Include="Il2CppTLD.Game.Events.Runtime"/>
         <Reference Include="Il2CppTLD.GameplayTag"/>
+	<Reference Include="Il2CppTLD.IntBackedUnit" />
         <Reference Include="Il2CppTLD.IO"/>
         <Reference Include="Il2CppTLD.Logging"/>
         <Reference Include="Il2CppTLD.OptionalContent"/>
